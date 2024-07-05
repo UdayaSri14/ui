@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_UI</title>
+    <style>
+        .div{
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: aliceblue;
+            width: 400px;
+            margin-left: 100px;
+            margin-left:-3px;
+        }
+        .autowidth{
+            display: inline-block;
+            border-color: crimson;
+        }
+        input[placeholder="First and Last name"]{
+            margin-left:53px;
+        }
+        input[placeholder="email"]{
+            margin-left:59px;
+        }
+        input[placeholder="Enter Your Number"]{
+            margin-left: 35px;
+        }
+        input[name="password"]{
+            margin-left:28px;
+        }
+        input[name=password1]{
+            margin-left:10px;
+        }
+        .input[name=""]
+        input[type="radio"]{
+            margin-left: 20px;
+        }
+        input[value="FeMale"]{
+        }
+        input[placeholder$="D.O.B"]{
+            margin-left:105px;
+        }
+        input[type^="sub"]{
+            background-color:aqua;
+            margin-left: 20px;
+        }
+        textarea[id="addr"]{
+            margin-left: 125px;
+        }
+        label[for]{
+            margin-left: 10px;
+        }
+        input[type="submit"]{
+            margin-left: 170px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="autowidth">
+        <legend align="center"><b>REGISTRATION FORM USING UI</b></legend>
+    <div class="div"><br>
+        <form>
+            <label for="username"><b>Enter Your name:</b></label>
+            <input type="text" id="username" name="user_name" placeholder="First and Last name"><br><hr>
+            <label for="email"><b>Enter Your Mail:</b></label>
+            <input type="text" id="email" name="mail" placeholder="email"><br><hr>
+            <label for="num"><b>Enter Your Number:</b></label>
+            <input type="tell" id="num" name="number" placeholder="Enter Your Number"><br><hr>
+            <label for="password"><b>Enter Your Password:</b></label>
+            <input type="password" id="password" required name="password" placeholder="Enter Your Password"><br><hr>
+            <label for="password1"><b>Confirm Your Password:</b></label>
+            <input type="password" id="password1" required name="password1" placeholder="Confirm Your Password"><br><hr>
+            <label ><b>Select your Gender:</label> <input type="radio" id="gender_1" name="gender" value="Male"><label for="gender_1">Male</label>
+            <input type="radio" id="gender_2" name="gender" value="Fe-Male"><label for="gender_2">Female</label><br><hr>
+            <label for="dob"><b>Select DOB:</b></label><input type="month" id="dob" name="date" placeholder="Select_your_D.O.B"><br><hr>
+            <label for="addr"><b>Address:</b></label>
+            <textarea name="addr" id="addr" placeholder="mention-your-address" value="ur address goes here"></textarea><br><br>
+            <hr>
+            <input type="submit">
+        </form>
+    </div>
+    </fieldset>
+</body>
+</html>
